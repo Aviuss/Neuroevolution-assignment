@@ -3,11 +3,11 @@
 # Instructions for running it
 
 ```
-python -m venv venv
+python3.11 -m venv venv
 source venv/bin/activate
 
-pip install jupyter ipykernel neat-python graphviz matplotlib numpy scikit-learn gymnasium tqdm
-pip install "gymnasium[classic-control]"
+pip install jupyter ipykernel neat-python graphviz matplotlib numpy scikit-learn tqdm gymnasium "gymnasium[classic-control]" swig "gymnasium[box2d]"
+
 python -m ipykernel install --user --name=venv
 ```
 
