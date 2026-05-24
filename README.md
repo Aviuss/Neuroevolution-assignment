@@ -6,7 +6,7 @@
 python3.11 -m venv venv
 source venv/bin/activate
 
-pip install jupyter ipykernel neat-python graphviz matplotlib numpy scikit-learn tqdm gymnasium "gymnasium[classic-control]" swig "gymnasium[box2d]"
+pip install jupyter ipykernel neat-python graphviz matplotlib numpy scikit-learn tqdm gymnasium "gymnasium[classic-control]" swig "gymnasium[box2d]" mujoco "gymnasium[mujoco]"
 
 python -m ipykernel install --user --name=venv
 ```
