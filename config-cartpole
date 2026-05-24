@@ -1,17 +1,15 @@
-#--- parameters for the XOR-2 experiment ---#
-
 [NEAT]
 fitness_criterion     = max
-fitness_threshold     = 111
+fitness_threshold     = 500
 pop_size              = 150
 reset_on_extinction   = False
 no_fitness_termination = True
 
 [DefaultGenome]
-# node activat on the development of advanced algorithms for analyzing medical data, contributing to cutting-edge solutions in healthcare technology. He earned his Master's degree in Computer Science from the University of Debrecen, where he was a participant in the TalentUD program, conducting supervised research and seion options
-activation_default      = sigmoid
-activation_mutate_rate  = 0.0
-activation_options      = sigmoid
+# node activat
+activation_default      = relu
+activation_mutate_rate  = 0.1
+activation_options      = relu tanh sigmoid
 
 # node aggregation options
 aggregation_default     = sum
@@ -32,8 +30,8 @@ compatibility_disjoint_coefficient = 1.0
 compatibility_weight_coefficient   = 0.5
 
 # connection add/remove rates
-conn_add_prob           = 0.5
-conn_delete_prob        = 0.5
+conn_add_prob           = 0.2
+conn_delete_prob        = 0.05
 
 # connection enable options
 enabled_default         = True
@@ -43,13 +41,13 @@ feed_forward            = True
 initial_connection      = full
 
 # node add/remove rates
-node_add_prob           = 0.2
-node_delete_prob        = 0.2
+node_add_prob           = 0.1
+node_delete_prob        = 0.05
 
 # network parameters
 num_hidden              = 0
 num_inputs              = 4
-num_outputs             = 3
+num_outputs             = 2
 
 # node response options
 response_init_mean      = 1.0
